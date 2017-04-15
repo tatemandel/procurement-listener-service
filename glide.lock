@@ -1,0 +1,22 @@
+hash: 7d7d075a01e91e3a422ea1f2bda7bed6f7c9e73f9c9ddb7f2fae16f6169755b4
+updated: 2017-04-13T14:45:14.483041073-07:00
+imports:
+- name: github.com/gorilla/context
+  version: 08b5f424b9271eedf6f9f0ce86cb9396ed337a42
+- name: github.com/gorilla/handlers
+  version: 13d73096a474cac93275c679c7b8a2dc17ddba82
+- name: github.com/gorilla/mux
+  version: 599cba5e7b6137d46ddf58fb1765f5d928e69604
+- name: github.com/satori/go.uuid
+  version: 5bf94b69c6b68ee1b541973bb8e1144db23a194b
+- name: github.com/stretchr/testify
+  version: 4d4bfba8f1d1027c4fdbe371823030df51419987
+  subpackages:
+  - assert
+- name: github.com/xeipuuv/gojsonpointer
+  version: 6fe8760cad3569743d51ddbb243b26f8456742dc
+- name: github.com/xeipuuv/gojsonreference
+  version: e02fc20de94c78484cd5ffb007f8af96be030a45
+- name: github.com/xeipuuv/gojsonschema
+  version: 702b404897d4364af44dc8dcabc9815947942325
+testImports: []

@@ -1,0 +1,9 @@
+package: procurementlistenerservice
+import:
+- package: github.com/gorilla/handlers
+- package: github.com/gorilla/mux
+- package: github.com/satori/go.uuid
+- package: github.com/xeipuuv/gojsonschema
+- package: github.com/xeipuuv/gojsonpointer
+- package: github.com/xeipuuv/gojsonreference
+- package: github.com/stretchr/testify/assert
