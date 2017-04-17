@@ -9,5 +9,3 @@ here to participate in the procurement flow of the upstream store.
 
 <p>This project also contains a basic conformance suite for testing the
 compliance of implementatinos.
-
-[//]: <> (TODO: Add link to the design doc for the API)
