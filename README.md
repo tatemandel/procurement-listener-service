@@ -44,23 +44,43 @@ docs](https://golang.org/doc/code.html#GOPATH)).
 ```shell
 cd $GOPATH/src
 git clone https://github.com/google/procurement-listener-service.git
+mv procurement-listener-service/ procurementlistenerservice/
 ```
 
 ### Build the Service
 
+The service has a few dependencies that must also be cloned from GitHub.
+
+``` shell
+cd $GOPATH/src
+mkdir -p github.com/gorilla
+mkdir -p github.com/xeipuuv
+
+cd $GOPATH/src/github.com/gorilla
+git clone https://github.com/gorilla/mux.git
+git clone https://github.com/gorilla/handlers.git
+
+cd $GOPATH/src/github.com/xeipuuv
+git clone https://github.com/xeipuuv/gojsonpointer.git
+git clone https://github.com/xeipuuv/gojsonreference.git
+git clone https://github.com/xeipuuv/gojsonschema.git
+```
+
+You should now be able to build the Procurement Listener service.
+
 ```shell
-go build procurement-listener-service
+go build procurementlistenerservice
 ```
 
 ### Run the Listener Service Locally
 ```shell
-cd $GOPATH/src/procurement-listener-service
+cd $GOPATH/src/procurementlistenerservice
 . scripts/runlocal.sh
 ```
 
 ### Run Conformance Tests
 ```shell
-cd $GOPATH/src/procurement-listener-service/conformance
+cd $GOPATH/src/procurementlistenerservice/conformance
 go test
 ```
 
